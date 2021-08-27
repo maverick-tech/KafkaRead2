@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>KafkaRead2</artifactId>
-  <version>1.1.0</version>
+  <version>2.0.0</version>
   <packaging>kjar</packaging>
   <name>KafkaRead2</name>
   <description></description>
@@ -15,10 +15,7 @@
       <url>https://testmaven123.jfrog.io/artifactory/newmaven-libs-release-local</url>
     </repository>
   </distributionManagement>
-  <properties>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.source>1.8</maven.compiler.source>
-  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
