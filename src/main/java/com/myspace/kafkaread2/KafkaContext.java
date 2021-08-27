@@ -6,12 +6,35 @@ package com.myspace.kafkaread2;
 
 public class KafkaContext implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public KafkaContext() {
-    }
+	@org.kie.api.definition.type.Label(value = "key")
+	private java.lang.String key;
+	@org.kie.api.definition.type.Label(value = "message")
+	private java.lang.String message;
 
+	public KafkaContext() {
+	}
 
+	public java.lang.String getKey() {
+		return this.key;
+	}
 
+	public void setKey(java.lang.String key) {
+		this.key = key;
+	}
+
+	public java.lang.String getMessage() {
+		return this.message;
+	}
+
+	public void setMessage(java.lang.String message) {
+		this.message = message;
+	}
+
+	public KafkaContext(java.lang.String key, java.lang.String message) {
+		this.key = key;
+		this.message = message;
+	}
 
 }
